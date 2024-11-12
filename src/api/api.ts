@@ -26,8 +26,8 @@ api.interceptors.request.use(
 api.interceptors.response.use(
     (response) => response,
     async (error) => {
-        const originalRequest = error.config;
-        const refreshToken = useAuthStore.getState().refreshToken;
+        // const originalRequest = error.config;
+        // const refreshToken = useAuthStore.getState().refreshToken;
 
         // console.log(error, originalRequest);
         // if (error.response.status === 401 && refreshToken && !originalRequest._retry) {
